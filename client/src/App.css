@@ -1,0 +1,93 @@
+html {
+  background-color: rgb(229, 229, 229);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+button#dropdown-profile.dropdown-toggle.btn.btn-primary::after {
+  display: none !important;
+}
+
+.dropdown-profile-item:hover {
+  background-color: gainsboro;
+}
+
+.approvement-modals {
+  width: 75vw !important;
+  max-width: none !important;
+  background-color: transparent !important;
+}
+
+.detailUser-modals {
+  width: 50vw !important;
+  max-width: none !important;
+  background-color: transparent !important;
+}
+
+.image-modals {
+  max-width: 40vw !important;
+  background-color: transparent !important;
+}
+
+/* mobile styling */
+@media screen and (max-width: 768px) {
+  #register-modal .modal-content {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+  .carousel-modals {
+    width: 100vw !important;
+    max-width: none !important;
+    background-color: transparent !important;
+  }
+  .card-guarantee {
+    margin-top: 10px;
+  }
+  .info-card {
+    width: 100%;
+  }
+}
+
+/* dekstop styling */
+@media screen and (min-width: 768px) {
+  #register-modal .modal-content {
+    height: 92vh;
+    overflow-y: scroll;
+  }
+  .carousel-modals {
+    width: 75vw !important;
+    max-width: none !important;
+    background-color: transparent !important;
+  }
+  .card-guarantee {
+    margin-top: -75px !important;
+    height: 350px !important;
+    width: 250px !important;
+    z-index: 2;
+  }
+  .delete-country-button {
+    opacity: 0;
+  }
+  .edit-country-button {
+    opacity: 0;
+  }
+  /* .country-list:hover {
+    background-color: aqua !important;
+  } */
+  .country-list:hover .delete-country-button {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    top: 15%;
+    right: 15px;
+  }
+  .country-list:hover .edit-country-button {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    top: 15%;
+    right: 35px;
+  }
+}
