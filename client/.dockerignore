@@ -1,0 +1,6 @@
+# Environment variables
+*.yml
+*.yaml
+
+node_modules
+build

@@ -10,9 +10,12 @@ REACT_APP_MIDTRANS_CLIENT_KEY=<your midtrans client key>
 ## ENV for Back-End
 
 ```env
-# database url
-DATABASE_URL=<your database url>
-# example -> db_user:db_password@tcp(127.0.0.1:3306)/db_name?charset=utf8mb4&parseTime=True&loc=Local
+# database
+DB_HOST=<database host>
+DB_USER=<database user>
+DB_PASSWORD=<database password>
+DB_NAME=<database name>
+DB_PORT=<database port>
 
 # secret key for jwt
 SECRET_KEY=<your secret key>
@@ -22,6 +25,14 @@ ORIGIN_ALLOWED=<domain that allow to hit/use your endpoint>
 
 # port for run backend
 PORT=<port that you want to run your api server>
+
+# origin set up
+ORIGIN_ALLOWED="*"
+
+# setup clodunary
+CLOUD_NAME=<cloudinary_name>
+API_KEY=<cloudinary_api_key>
+API_SECRET=<cloudinary_api_secret>
 
 # server key midtrans
 SERVER_KEY=<your midtrans server key>
