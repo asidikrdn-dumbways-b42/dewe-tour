@@ -38,4 +38,8 @@ CONFIG_AUTH_PASSWORD=<email password>
 
 # redirect url on verification link
 REDIRECT_URL_ON_VERIFICATION=<your front-end/client url>
+
+# admin account
+ADMIN_EMAIL=<email for login as admin>
+ADMIN_PASSWORD=<password for login as admin>
 ```
